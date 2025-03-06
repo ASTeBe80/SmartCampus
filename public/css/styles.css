@@ -1,25 +1,3 @@
-.MainDiv{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: aqua;
-}
-.Sub-div{
-  margin-top: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: bisque;
-}
-.Buttonscontainer{
-  margin-top: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  column-gap: 40px;
-  background-color: blueviolet;
-  padding: 30px;
-}
 
 
 /* student login page */
@@ -84,10 +62,11 @@ nav ul li .btn {
   height: 80vh;
   display: flex;
   align-items: center;
-  /* justify-content: center; */
+  justify-content: center;
   text-align: center;
   color: #fff;
   padding: 2rem;
+  column-gap: 30vh;
 }
 
 .hero-content {
@@ -188,4 +167,10 @@ footer {
 /* anchor tags no style */
 a{
   text-decoration: none;
+}
+
+.logo{
+  width: 200px;
+  height: auto;
+  display: flex;
 }
