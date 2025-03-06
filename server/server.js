@@ -11,7 +11,7 @@ app.use(cors());
 app.use(bodyParser.json());
 
 // MongoDB Connection
-mongoose.connect("mongodb://127.0.0.1:27017/erp_system", {
+mongoose.connect("mongodb+srv://ayushbanegadon:ayush0088@cluster0.rsmwr.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0", {
     useNewUrlParser: true,
     useUnifiedTopology: true,
 }).then(() => console.log("✅ MongoDB Connected"))
