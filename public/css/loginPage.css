@@ -1,73 +1,166 @@
-/* Student Login Page */
+/* General Styles */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #e3f2fd; /* Light blue background for students */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-  }
-  
-  .login-container {
-    background: #fff;
-    padding: 2rem;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    width: 350px;
-  }
-  
-  .login-container h2 {
-    color: #0277bd; /* Blue for student login */
-    margin-bottom: 1rem;
-  }
-  
-  .login-container label {
-    display: block;
-    text-align: left;
-    font-weight: bold;
-    margin-top: 0.5rem;
-  }
-  
-  .login-container input {
-    width: 100%;
-    padding: 0.75rem;
-    margin-top: 0.3rem;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 1rem;
-  }
-  
-  .login-container button {
-    width: 100%;
-    background: #ff9800; /* Orange button for students */
-    border: none;
-    padding: 0.75rem;
-    margin-top: 1rem;
-    border-radius: 5px;
-    font-size: 1rem;
-    font-weight: bold;
-    color: #fff;
-    cursor: pointer;
-  }
-  
-  .login-container button:hover {
-    background: #f57c00;
-  }
-  
-  .login-container p {
-    margin-top: 1rem;
-    font-size: 0.9rem;
-  }
-  
-  .login-container a {
-    color: #0277bd;
-    text-decoration: none;
-  }
-  
-  .login-container a:hover {
-    text-decoration: underline;
-  }
-  
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #e3f2fd; /* Light blue background for students */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  box-sizing: border-box;
+  color: #333;
+}
+
+/* Login Container */
+.login-container {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 350px;
+}
+
+.login-container h2 {
+  color: #0277bd; /* Blue for student login */
+  margin-bottom: 1rem;
+}
+
+.login-container label {
+  display: block;
+  text-align: left;
+  font-weight: bold;
+  margin-top: 0.5rem;
+}
+
+.login-container input {
+  width: 100%;
+  padding: 0.75rem;
+  margin-top: 0.3rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.login-container input:focus {
+  border-color: #0277bd;
+  outline: none;
+  box-shadow: 0 0 5px rgba(2, 119, 189, 0.5);
+}
+
+/* Login Button */
+.login-container button {
+  width: 100%;
+  background: #ff9800; /* Orange button for students */
+  border: none;
+  padding: 0.75rem;
+  margin-top: 1rem;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+
+.login-container button:hover {
+  background: #f57c00;
+}
+
+/* Additional Text */
+.login-container p {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+}
+
+.login-container a {
+  color: #0277bd;
+  text-decoration: none;
+  font-weight: bold;
+  transition: text-decoration 0.3s ease-in-out;
+}
+
+.login-container a:hover {
+  text-decoration: underline;
+}
+
+/* Ensure UI Consistency */
+.MainDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: aqua;
+}
+
+.Sub-div {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: bisque;
+}
+
+.Buttonscontainer {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 40px;
+  background-color: blueviolet;
+  padding: 30px;
+}
+
+/* Header & Navigation Consistency */
+header {
+  background: #0044cc;
+  padding: 1rem 0;
+  text-align: center;
+  color: #fff;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+}
+
+nav .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+}
+
+nav ul li .btn {
+  background: #ffcc00;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  color: #000;
+  font-weight: bold;
+}
+
+/* Footer Consistency */
+footer {
+  background: #222;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: 2rem;
+}
