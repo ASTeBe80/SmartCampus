@@ -1,0 +1,22 @@
+.MainDiv{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: aqua;
+}
+.Sub-div{
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: bisque;
+}
+.Buttonscontainer{
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 40px;
+  background-color: blueviolet;
+  padding: 30px;
+}
