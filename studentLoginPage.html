@@ -3,34 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Student Login</title>
+    <title>Student Login - Smart Campus</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link external CSS -->
 </head>
 <body>
-    <div class="heading">
-        <h1>Student Login</h1>
-    </div>
-    
-    <div class="Form">
-        <div class="UID">
-            <input type="text" placeholder="Enter Roll No.">
-        </div>
-        <div class="password">
-            <input type="password" placeholder="password">
-        </div>
-        <div>
-            <a href="">
-                <button class="Login">Login</button>
-            </a>
-        </div>
-    </div>
+    <div class="login-container">
+        <h2>Student Login</h2>
+        <form action="/student-login" method="POST"> <!-- Backend route -->
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
 
-    <div class="metaform">
-        <span class="signup">
-            <a href="">Sign Up</a>
-        </span>
-        <span class="forgot">
-            <a href="">Forgot Password?</a>
-        </span>
-    </div> 
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <button type="submit">Login</button>
+        </form>
+        <p>Forgot Password? <a href="#">Reset Here</a></p>
+    </div>
 </body>
 </html>
